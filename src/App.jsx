@@ -80,7 +80,7 @@ function App() {
             <h1>Efficiency at <br /><em>every click.</em></h1>
             <p className="hero-text">We transform ambitious stories into memorable brands, brilliant experiences, and results you can feel.</p>
             <div className="hero-actions">
-              <a href="#contact" className="button button-primary">Start a project <Arrow /></a>
+              <a href="#contact" className=" p-2 button button-primary ">Start a project <Arrow /></a>
               <a href="#services" className="button button-secondary">Explore what we do</a>
             </div>
           </div>
@@ -97,12 +97,20 @@ function App() {
         </section>
 
         <section className="services-section" id="services">
-          <div className="section-label">02 / What we create</div>
+          <div className="section-label">02 / Services We Offer</div>
           <div className="services-heading"><h2>Big thinking.<br /><em>Beautiful doing.</em></h2><p>Every great idea deserves a considered expression. Bring us your challenge—we'll bring the energy, expertise, and a fresh point of view.</p></div>
           <div className="service-list">
             {services.map(([number, title, text]) => (
               <article className="service" key={number}>
-                <span>{number}</span><h3>{title}</h3><p>{text}</p><a href="#contact" aria-label={`Learn about ${title}`}><Arrow /></a>
+                <div className="service-top">
+                  <span>{number}</span>
+                  <div className="service-decor"><Spark /></div>
+                </div>
+                <div className="service-body">
+                  <h3>{title}</h3>
+                  <p>{text}</p>
+                </div>
+                <a href="#contact" className="service-action" aria-label={`Learn about ${title}`}><Arrow /></a>
               </article>
             ))}
           </div>
