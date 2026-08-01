@@ -282,7 +282,7 @@ a {
   overflow: hidden;
   padding: 145px 9vw 80px;
   color: #fff;
-  background: #0c051b url('/hero.png') center/cover no-repeat;
+  background: #0c051b url('/hero.jpg') center/cover no-repeat;
   background-size: cover;
 }
 
@@ -997,3 +997,55 @@ footer {
 
 }
 
+/* Loader */
+.loader-overlay {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(180deg, rgba(6,3,18,0.95), rgba(12,5,27,0.95));
+  z-index: 9999;
+  color: #fff;
+}
+
+.loader-inner {
+  width: min(540px, 86vw);
+  text-align: center;
+  display: grid;
+  gap: 18px;
+  align-items: center;
+}
+
+.loader-logo {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.loader-title {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: .01em;
+}
+
+.loader-bar {
+  width: 100%;
+  height: 10px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 999px;
+  overflow: hidden;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.04);
+}
+
+.loader-progress {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, rgba(198,255,63,1), rgba(118,69,221,1));
+  transition: width 120ms linear;
+}
+
+@media (max-width: 420px) {
+  .loader-logo { width: 56px; height: 56px }
+  .loader-title { font-size: 16px }
+}
