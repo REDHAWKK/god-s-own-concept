@@ -38,7 +38,7 @@ export default function Navigation({ scrolled }) {
       {/* Desktop */}
       <div
         className="
-        hidden md:flex
+        hidden lg:flex
         items-center
         gap-8
         rounded-2xl
@@ -107,7 +107,7 @@ export default function Navigation({ scrolled }) {
 
       {/* Mobile */}
 
-      <div className="md:hidden relative">
+      <div className="lg:hidden relative">
         <div
           className="
           flex
@@ -119,7 +119,6 @@ export default function Navigation({ scrolled }) {
           border
           border-white/60
           bg-white/90
-          backdrop-blur-xl
           px-4
           py-3
           shadow-lg
