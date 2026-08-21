@@ -131,8 +131,8 @@ function App() {
 
         <section className="contact-section" id="contact">
           <div className="contact-shape shape-a" /><div className="contact-shape shape-b" />
-          <div className="contact-layout">
-            <div className="contact-intro"><ScrollReveal><p className="footer-kicker">Have a bright idea?</p></ScrollReveal><ScrollReveal delay={1}><h2>Let's make it<br /><em>real.</em></h2></ScrollReveal><ScrollReveal delay={2}><p className="contact-note">Tell us a little about the project you have in mind. We'll get back to you on WhatsApp.</p></ScrollReveal><ScrollReveal delay={3}><a className="footer-email" href="mailto:hello@godsownconcept.com">hello@godsownconcept.com <Arrow /></a></ScrollReveal></div>
+          <div className="contact-layout"> 
+            <div className="contact-intro"><ScrollReveal><p className="footer-kicker">Have a bright idea?</p></ScrollReveal><ScrollReveal delay={1}><h2>Let's make it<br /><em>real.</em></h2></ScrollReveal><ScrollReveal delay={2}><p className="contact-note">Tell us a little about the project you have in mind. We'll get back to you on WhatsApp.</p></ScrollReveal><ScrollReveal delay={3}><a className="footer-email" href="mailto:toluwaniolayinka57@gmail.com?subject=Project%20request%20for%20God%27s%20Own%20Concept" aria-label="Email God's Own Concept at toluwaniolayinka57@gmail.com">toluwaniolayinka57@gmail.com <Arrow /></a></ScrollReveal></div>
             <ContactForm />
           </div>
         </section>
